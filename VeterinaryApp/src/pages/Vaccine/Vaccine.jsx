@@ -79,7 +79,6 @@ function Vaccine() {
 
   const handleDeleteVaccine = (e) => {
     const id = e.target.id;
-    console.log(id);
     axios
       .delete(
         import.meta.env.VITE_VET_API_BASEURL + `/api/v1/vaccinations/${id}`
