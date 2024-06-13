@@ -4,16 +4,19 @@ import { IoMdAdd } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
 
 function Vaccine() {
-  const [vaccine, setVaccine] = useState([]);
-  const [animal, setAnimal] = useState([]);
-  const [report, setReport] = useState([]);
-  const [update, setUpdate] = useState([]);
-  const [newVaccine, setNewVaccine] = useState({
+  const initState = {
     name: "",
     code: "",
     protectionStartDate: "",
     protectionFinishDate: "",
     animalWithoutCustomer: {},
+  };
+  const [vaccine, setVaccine] = useState([]);
+  const [animal, setAnimal] = useState([]);
+  const [report, setReport] = useState([]);
+  const [update, setUpdate] = useState([]);
+  const [newVaccine, setNewVaccine] = useState({
+    ...initState,
   });
 
   const [alert1, setAlert1] = useState(false);
@@ -59,11 +62,7 @@ function Vaccine() {
       .then(setUpdate(false))
       .then(
         setNewVaccine({
-          name: "",
-          code: "",
-          protectionStartDate: "",
-          protectionFinishDate: "",
-          animalWithoutCustomer: {},
+          ...initState,
         })
       )
       .then(() => setAlert1(true))
