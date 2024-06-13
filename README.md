@@ -30,11 +30,6 @@ Frontend kısmı, React.js kullanılarak geliştirilmiştir. Kullanıcı arayüz
 - **Axios**
 
 
-## Proje Bileşenleri
-
-- **Pages**
-- **Component**
-- **App.jsx**
 
 ## Modüller
 
