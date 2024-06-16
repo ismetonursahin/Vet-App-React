@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { FaCat } from "react-icons/fa";
+import { FaEarlybirds } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -8,8 +8,8 @@ function Navbar() {
       <div className="ml-12 ">
         <Link to="/">
           <div className="flex items-center justify-center gap-2">
-            <FaCat className="text-[3rem]" />
-            <div className="text-[2rem]">VET</div>
+            <FaEarlybirds className="text-[3.5rem]" />
+            <div className="text-[2rem]">vetti</div>
           </div>
         </Link>
       </div>
