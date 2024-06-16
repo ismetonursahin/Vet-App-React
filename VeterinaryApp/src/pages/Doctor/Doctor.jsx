@@ -250,51 +250,70 @@ function Doctor() {
       <div className="flex justify-evenly mt-4 py-3 w-10/12 mx-auto backdrop-blur-[6px] bg-white/15 rounded-md ">
         <div className=" mt-2 py-2 px-2 rounded-lg  ">
           <h2 className="text-center mb-1 text-white text-xl">Doktor Ekle</h2>
-          <div className=" flex flex-col gap-2 w-44 items-center">
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="name"
-              value={newDoctor.name}
-              placeholder="Doktor Adı"
-              onChange={handleNewDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="phone"
-              value={newDoctor.phone}
-              placeholder="Doktor Telefon"
-              onChange={handleNewDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="email"
-              value={newDoctor.email}
-              placeholder="Doktor E-mail"
-              onChange={handleNewDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="address"
-              value={newDoctor.address}
-              placeholder="Doktor Adres"
-              onChange={handleNewDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="city"
-              newDoctor
-              value={newDoctor.city}
-              placeholder="Şehir"
-              onChange={handleNewDoctorInputChange}
-            />
+          <div className=" flex flex-col  w-44 items-center">
+            <label htmlFor="">
+              <h2 className="text-white">Doktor Adı</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="name"
+                value={newDoctor.name}
+                placeholder="Doktor Adı"
+                onChange={handleNewDoctorInputChange}
+              />
+            </label>
+            <label htmlFor="">
+              <h2 className="text-white">Telefon</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="phone"
+                value={newDoctor.phone}
+                placeholder="Doktor Telefon"
+                onChange={handleNewDoctorInputChange}
+              />{" "}
+            </label>
+
+            <label htmlFor="">
+              <h2 className="text-white">E-mail</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="email"
+                value={newDoctor.email}
+                placeholder="Doktor E-mail"
+                onChange={handleNewDoctorInputChange}
+              />{" "}
+            </label>
+
+            <label htmlFor="">
+              <h2 className="text-white">Adres</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="address"
+                value={newDoctor.address}
+                placeholder="Doktor Adres"
+                onChange={handleNewDoctorInputChange}
+              />{" "}
+            </label>
+
+            <label htmlFor="">
+              <h2 className="text-white">Şehir</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="city"
+                newDoctor
+                value={newDoctor.city}
+                placeholder="Şehir"
+                onChange={handleNewDoctorInputChange}
+              />
+            </label>
+
             <button
               onClick={handleAddNewDoctor}
-              className="flex justify-center items-center w-24 p-1 bg-green-400 gap-2 rounded-lg"
+              className="flex justify-center items-center w-24 p-1 bg-green-400 gap-2 rounded-lg mt-1"
             >
               <div>
                 <IoMdAdd />
@@ -303,56 +322,76 @@ function Doctor() {
             </button>
           </div>
         </div>
-        <div className="rounded-lg mt-2   py-2 px-2   ">
+        <div className="rounded-lg mt-2 py-2 px-2   ">
           <h2 className="text-center mb-1 text-white text-xl">
             Doktor Güncelle
           </h2>
-          <div className="flex flex-col gap-2 w-44 items-center">
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="name"
-              value={updateDoctor.name}
-              updateDoctor
-              placeholder="Doktor Adı"
-              onChange={handleUpdateDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="phone"
-              value={updateDoctor.phone}
-              placeholder="Doktor Telefon"
-              onChange={handleUpdateDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="email"
-              value={updateDoctor.email}
-              placeholder="Doktor E-mail"
-              onChange={handleUpdateDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="address"
-              value={updateDoctor.address}
-              placeholder="Doktor Adres"
-              onChange={handleUpdateDoctorInputChange}
-            />{" "}
-            <input
-              className="rounded-sm px-1 py-1"
-              type="text"
-              name="city"
-              newDoctor
-              value={updateDoctor.city}
-              placeholder="Şehir"
-              onChange={handleUpdateDoctorInputChange}
-            />
+          <div className="flex flex-col  w-44 items-center">
+            <label>
+              <h2 className="text-white">Doktor Adı</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="name"
+                value={updateDoctor.name}
+                updateDoctor
+                placeholder="Doktor Adı"
+                onChange={handleUpdateDoctorInputChange}
+              />{" "}
+            </label>
+
+            <label htmlFor="">
+              <h2 className="text-white">Telefon</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="phone"
+                value={updateDoctor.phone}
+                placeholder="Doktor Telefon"
+                onChange={handleUpdateDoctorInputChange}
+              />{" "}
+            </label>
+
+            <label htmlFor="">
+              <h2 className="text-white">E-mail</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="email"
+                value={updateDoctor.email}
+                placeholder="Doktor E-mail"
+                onChange={handleUpdateDoctorInputChange}
+              />{" "}
+            </label>
+
+            <label htmlFor="">
+              <h2 className="text-white">Adres</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="address"
+                value={updateDoctor.address}
+                placeholder="Doktor Adres"
+                onChange={handleUpdateDoctorInputChange}
+              />{" "}
+            </label>
+
+            <label htmlFor="">
+              <h2 className="text-white">Şehir</h2>
+              <input
+                className="rounded-sm px-1 py-1"
+                type="text"
+                name="city"
+                newDoctor
+                value={updateDoctor.city}
+                placeholder="Şehir"
+                onChange={handleUpdateDoctorInputChange}
+              />
+            </label>
+
             <button
               onClick={handleUpdateDoctor}
-              className="flex justify-center items-center w-24 p-1 bg-green-400 gap-2 rounded-lg"
+              className="flex justify-center items-center w-24 p-1 bg-blue-300 gap-2 rounded-lg mt-1"
             >
               <div>
                 <MdModeEdit />
